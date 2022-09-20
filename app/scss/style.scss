@@ -20,11 +20,9 @@
      svg {
       width: 2.3rem;
       height: 2.2rem;
-      viewBox: 0 0 44 45;
      }
      path {
-      // width: 2.3rem;
-      // height: 2.2rem;
+      width: 100%;
      }
   }
   &__nav {
@@ -60,6 +58,7 @@
     }
   }
   &__link {
+    vertical-align: middle;
     color: inherit;
     white-space: nowrap;
   }
