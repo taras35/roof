@@ -17,13 +17,11 @@
      display: flex;
      align-items: center;
      justify-content: start;
-     svg {
-      width: 2.3rem;
-      height: 2.2rem;
-     }
-     path {
-      width: 100%;
-     }
+     @media (any-hover: hover) {
+      &:hover {
+        cursor: pointer;
+      }
+    }
   }
   &__nav {
     align-self: center;
@@ -56,6 +54,27 @@
     &:not(:last-child) {
       margin-right: 11rem;
     }
+    position: relative;
+    transition: all .2s ease-out;
+    @media (any-hover: hover) {
+      &:hover {
+        cursor: pointer;
+        color: #F38120;
+        &::after {
+          width: 100%;
+        }
+      }
+    }
+  }
+  &__item::after {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #F38120;
+    transition: all .2s ease-out;
   }
   &__link {
     vertical-align: middle;
