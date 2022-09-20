@@ -5,6 +5,62 @@
 @import 'global';
 
 
-.header{
+.header {
+  &__menu {
+    display: flex;
+    font-size: 1.4rem;
+    padding: 4.4rem 0 3.8rem;
+    border-bottom: 1px solid rgba(28, 28, 28, 0.07);
+  }
+  &__home-ic {
+     margin-right: 10rem;
+     display: flex;
+     align-items: center;
+     justify-content: start;
+     svg {
+      width: 2.3rem;
+      height: 2.2rem;
+      viewBox: 0 0 44 45;
+     }
+     path {
+      // width: 2.3rem;
+      // height: 2.2rem;
+     }
+  }
+  &__nav {
+    align-self: center;
+    flex-grow: 1;
+  }
+  &__info {}
+  &__descr {}
+  &__descr-text {}
+  &__price {}
+  &__price-icon {}
+  &__price-text {}
+  &__logo {}
+  &__img {}
+  &__social {}
+  &__social-text {}
+  &__social-item {}
+  &__contact {}
+  &__schedule {}
+  &__tel {}
+  &__feedback {}
+}
 
+.menu {
+  &__list {
+    display: flex;
+    text-transform: uppercase;
+    line-height: 140%;
+  }
+  &__item {
+    &:not(:last-child) {
+      margin-right: 11rem;
+    }
+  }
+  &__link {
+    color: inherit;
+    white-space: nowrap;
+  }
 }
