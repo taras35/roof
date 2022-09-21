@@ -144,6 +144,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    :not(:last-child) {
+      margin-bottom: 0.6rem;
+    }
   }
   &__schedule {
     line-height: 1.5rem;
