@@ -11,6 +11,7 @@
     font-size: 1.4rem;
     padding: 4.4rem 0 3.8rem;
     border-bottom: 1px solid rgba(28, 28, 28, 0.07);
+    font-weight: 500;
   }
   &__home-ic {
      margin-right: 10rem;
@@ -27,21 +28,148 @@
     align-self: center;
     flex-grow: 1;
   }
-  &__info {}
-  &__descr {}
-  &__descr-text {}
-  &__price {}
-  &__price-icon {}
-  &__price-text {}
-  &__logo {}
-  &__img {}
-  &__social {}
-  &__social-text {}
-  &__social-item {}
-  &__contact {}
-  &__schedule {}
-  &__tel {}
-  &__feedback {}
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2rem;
+    line-height: 167%;
+    font-weight: 400;
+    
+  }
+  &__descr {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 0 1 13.1%;
+    text-align: center;
+    strong {
+      font-weight: 600;
+    }
+  }
+  &__descr-text {
+    &:not(:last-child) {
+      margin-bottom: 1.2rem;
+    }
+  }
+  &__price {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  &__price-icon {
+    width: 4.4rem;
+    height: 4.4rem;
+    color: #12C868;
+    letter-spacing: 0.04em;
+    font-size: 1.1rem;
+    line-height: 1.3rem;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1.7rem;
+  }
+  &__price-text {
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    line-height: 1.5rem;
+    border-bottom: 2px dotted #12C868;
+    padding-bottom: 0.2rem;
+  }
+  &__logo {
+    width: 17.45%;
+    height: 14.8rem;
+    padding: 2.7rem 4.3rem 4.3rem;
+    background-image: url('../images/logo-bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  &__img {
+    width: 100%;
+  }
+  &__social {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 0 1 10.2%;
+    justify-content: center;
+  }
+  &__social-text {
+    position: relative;
+    letter-spacing: 0.02em;
+    line-height: 1.5rem;
+    b {
+      font-weight: 700;
+    }
+    &:not(:last-child) {
+      margin-bottom: 1.7rem;
+    }
+  }
+  &__social-text::before {
+    content: '';
+    position: absolute;
+    width: 0.4rem;
+    height: 0.4rem;
+    border-radius: 50%;
+    background-color: #12C868;
+    top: 50%;
+    left: -0.8rem;
+    transform: translateY(-50%);
+  }
+  &__social-items {
+    flex: 0 1 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__social-item {
+    height: 4.3rem;
+    width: 4.3rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &--viber {
+      background: #976FCC;
+    }
+    &--whatsup {
+      background: #12C868;
+    }
+    &--telegram {
+      background: #05A0EB;
+    }
+  }
+  &__contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__schedule {
+    line-height: 1.5rem;
+    letter-spacing: 0.02em;
+    b {
+      font-weight: 700;
+    }
+  }
+  &__tel {
+    letter-spacing: 0.05em;
+    font-weight: 600;
+    font-size: 2.2rem;
+    line-height: 2.7rem;
+  }
+  &__feedback {
+    cursor: pointer;
+    padding: 0;
+    padding-bottom: 0.2rem;
+    font-weight: 600;
+    line-height: 1.5rem;
+    letter-spacing: 0.04em;
+    color: #12C868;
+    border: none;
+    background: transparent;
+    border-bottom: 2px dotted #12C868;
+  }
 }
 
 .menu {
@@ -80,5 +208,10 @@
     vertical-align: middle;
     color: inherit;
     white-space: nowrap;
+    letter-spacing: 0.05em;
   }
+}
+
+a.header__tel {
+  color: #1C1C1C;
 }
