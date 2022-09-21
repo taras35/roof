@@ -14,6 +14,10 @@ body {
 	display: flex;
 	flex-direction: column;
 	min-height: 100%;
+}
+
+.bg {
+  min-height: 100vh;
   background-image: url('../images/bg-1x.jpg');
   background-image: image-set(
     "../images/bg-1x.webp" 1x,

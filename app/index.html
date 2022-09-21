@@ -12,66 +12,91 @@
 <body>
 
   <div class="wrapper">
-    <!-- семантика вместо спан -->
-    <header class="header">
-      <div class="container">
-        <div class="header__menu">
-          <a class="header__home-ic" href="#">
-            <i class="ic_home"></i>
-          </a>
-          <nav class="header__nav">
-            <ul class="menu__list">
-              <li class="menu__item"><a class="menu__link" href="#">каталог</a></li>
-              <li class="menu__item"><a class="menu__link" href="#">Преимущества</a></li>
-              <li class="menu__item"><a class="menu__link" href="#">Примеры работ</a></li>
-              <li class="menu__item"><a class="menu__link" href="#">монтаж</a></li>
-              <li class="menu__item"><a class="menu__link" href="#">отзывы</a></li>
-              <li class="menu__item"><a class="menu__link" href="#">Ответы на вопросы</a></li>
-              <li class="menu__item"><a class="menu__link" href="#">контакты</a></li>
-            </ul>
-          </nav>
-        </div>
-        <div class="header__info">
-          <div class="header__descr"> 
-            <p class="header__descr-text"><strong>Кровельные и фасадные материалы</strong> в Тюмени и области.</p>
-            <p class="header__descr-text">Профессиональный монтаж с 2010 года.</p>
+    <div class="bg">
+      <header class="header">
+        <div class="container">
+          <div class="header__menu">
+            <a class="header__home-ic" href="#">
+              <i class="ic_home"></i>
+            </a>
+            <nav class="header__nav">
+              <ul class="menu__list">
+                <li class="menu__item"><a class="menu__link" href="#">каталог</a></li>
+                <li class="menu__item"><a class="menu__link" href="#">Преимущества</a></li>
+                <li class="menu__item"><a class="menu__link" href="#">Примеры работ</a></li>
+                <li class="menu__item"><a class="menu__link" href="#">монтаж</a></li>
+                <li class="menu__item"><a class="menu__link" href="#">отзывы</a></li>
+                <li class="menu__item"><a class="menu__link" href="#">Ответы на вопросы</a></li>
+                <li class="menu__item"><a class="menu__link" href="#">контакты</a></li>
+              </ul>
+            </nav>
           </div>
-          <div class="header__price">
-            <div class="header__price-icon">Pdf</div>
-            <p class="header__price-text">Скачать прайс-каталог</p>
-          </div>
-          <div class="header__logo">
-            <picture>
-              <source srcset="images/logo-mob.png" media="(max-width: 600px)">
-              <img class="header__img" src="images/logo.png" alt="logo">
-            </picture>
-          </div>
-          <div class="header__social">
-            <p class="header__social-text">Отвечаем <b>онлайн</b></p>
-            <div class="header__social-items">
-              <a class="header__social-item header__social-item--viber">
-                <i class="ic_viber"></i>
-              </a>
-              <a class="header__social-item header__social-item--whatsup">
-                <i class="ic_whatsup"></i>
-              </a>
-              <a class="header__social-item header__social-item--telegram">
-                <i class="ic_telegram"></i>             
-              </a>
+          <div class="header__info">
+            <div class="header__descr"> 
+              <p class="header__descr-text"><strong>Кровельные и фасадные материалы</strong> в Тюмени и области.</p>
+              <p class="header__descr-text">Профессиональный монтаж с 2010 года.</p>
+            </div>
+            <div class="header__price">
+              <div class="header__price-icon">Pdf</div>
+              <p class="header__price-text">Скачать прайс-каталог</p>
+            </div>
+            <div class="header__logo">
+              <picture>
+                <source srcset="images/logo-mob.png" media="(max-width: 600px)">
+                <img class="header__img" src="images/logo.png" alt="logo">
+              </picture>
+            </div>
+            <div class="header__social">
+              <p class="header__social-text">Отвечаем <b>онлайн</b></p>
+              <div class="header__social-items">
+                <a class="header__social-item header__social-item--viber">
+                  <i class="ic_viber"></i>
+                </a>
+                <a class="header__social-item header__social-item--whatsup">
+                  <i class="ic_whatsup"></i>
+                </a>
+                <a class="header__social-item header__social-item--telegram">
+                  <i class="ic_telegram"></i>             
+                </a>
+              </div>
+            </div>
+            <div class="header__contact"><b></b>
+              <p class="header__schedule"><b>Пн-Пт</b> 9:00 - 18:00, <b>Сб</b> 10:00 - 18:00</p>
+              <a class="header__tel" href="">8 (800) 222-54-60</a>
+              <button class="header__feedback">Позвоните мне</button>
             </div>
           </div>
-          <div class="header__contact"><b></b>
-            <p class="header__schedule"><b>Пн-Пт</b> 9:00 - 18:00, <b>Сб</b> 10:00 - 18:00</p>
-            <a class="header__tel" href="">8 (800) 222-54-60</a>
-            <button class="header__feedback">Позвоните мне</button>
+        </div>
+      </header>
+      <section class="hero">
+        <div class="container">
+          <div class="hero__inner">
+            <div class="hero__benefits">
+              <ul class="benefits__list">
+                <li class="benefits__item"><strong>Гарантия от 50</strong> лет на материалы и 5 лет на монтаж</li>
+                <li class="benefits__item"><strong>Замер, монтажный проект</strong> и еще 4 услуги бесплатно</li>
+                <li class="benefits__item"><strong>Сметы точны</strong> до копейки</li>
+                <li class="benefits__item"><strong>Поэтапная оплата,</strong> кредит или рассрочка</li>
+                <li class="benefits__item"><strong>Наши крыши вкаждом поселке</strong> и дачном сообществе региона</li>
+              </ul>
+            </div>
+            <div class="hero__content">
+              <h1 class="hero__title">Продажа <strong>кровельных материалов</strong> в Тюмени и Тюменской области </h1>
+              <h2 class="hero__subtitle">и монтаж под ключ</h2>
+              <div class="hero__box">
+                <div class="hero__buttons">
+                  <button class="hero__btn">Рассчитать стоимость материалов и монтажа</button>
+                  <button class="hero__btn">записаться на просмотр объектов</button>
+                </div>
+                <p class="hero__text"><b>Ответьте на несколько вопросов и получите</b> сметную стоимость и 3 подарка за экономию нашего времени</p>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-      
-    </header>
+      </section>
+    </div>
   </div>
   
-
   <script src="js/main.min.js"></script>
 </body>
 
