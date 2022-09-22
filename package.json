@@ -19,5 +19,8 @@
     "gulp-uglify-es": "^2.0.0",
     "jquery": "^3.5.1",
     "sass": "^1.54.5"
+  },
+  "dependencies": {
+    "jquery.maskedinput": "^1.4.1"
   }
 }

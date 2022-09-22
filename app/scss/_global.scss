@@ -63,7 +63,7 @@ i {
   color: #fff;
   font-size: 1.93rem;
 }
-.ic_whatsup:before {
+.ic_whatsapp:before {
   content: "\e901";
   color: #fff;
   font-size: 2rem;
@@ -85,9 +85,16 @@ i {
 }
 .ic_close:before {
   content: "\e905";
+  color: #A0A0A0;
+  font-size: 2rem;
+  transition: all .2s ease-out;
 }
 .ic_check:before {
   content: "\e906";
+}
+.ic_hand {
+  font-size: 2rem;
+  margin-right: 1.6rem;
 }
 .ic_hand .path1:before {
   content: "\e907";
@@ -103,6 +110,8 @@ i {
   content: "\e909";
   margin-left: -1.23828125em;
   color: rgb(28, 28, 28);
+  position: relative;
+  z-index: 1;
 }
 
 
