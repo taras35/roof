@@ -8,6 +8,7 @@ body {
 	line-height: 157%;
 	color: #1C1C1C;
 	background-color: #F5F5F5;
+  font-weight: 400;
 }
 
 .wrapper {
@@ -76,6 +77,32 @@ i {
   content: "\e902";
   color: #F38120;
 	font-size: 2.2rem;
+}
+.ic_arrow:before {
+  content: "\e904";
+  color: #fff;
+  font-size: 2rem;
+}
+.ic_close:before {
+  content: "\e905";
+}
+.ic_check:before {
+  content: "\e906";
+}
+.ic_hand .path1:before {
+  content: "\e907";
+  color: rgb(243, 129, 32);
+}
+.ic_hand .path2:before {
+  content: "\e908";
+  margin-left: -1.23828125em;
+  color: rgb(243, 129, 32);
+  opacity: 0.25;
+}
+.ic_hand .path3:before {
+  content: "\e909";
+  margin-left: -1.23828125em;
+  color: rgb(28, 28, 28);
 }
 
 
