@@ -1,4 +1,5 @@
 $( document ).ready(function () {
+
   // mask
 
   $.fn.setCursorPosition = function(pos) {
@@ -17,14 +18,14 @@ $( document ).ready(function () {
     $(this).setCursorPosition(4);
   }).mask("+7 ( 9 9 9 ) 9 9 9 - 9 9 - 9 9");
 
-  
+  // form
 
-  $('.header__feedback').click(function() {
-    $('.modal').addClass('visible')
-  });
+  // if ($('.c'))
+
 });
 
 window.addEventListener('DOMContentLoaded', () => {
+
   // popup
 
   document.querySelector('.header__feedback').addEventListener('click', () => {

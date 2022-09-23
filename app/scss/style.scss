@@ -536,25 +536,57 @@ a.header__tel {
       margin-bottom: 1.9rem;
     }
   }
-  &__inner {
-    display: flex;
-    align-items: center;
-    &:not(:last-child) {
-      margin-bottom: 1.9rem;
-    }
+  &__btn:disabled {
+    background-color: #ccc;
   }
+  // &__inner {
+  //   display: inline-flex;
+  //   align-items: center;
+  //   &:not(:last-child) {
+  //     margin-bottom: 1.9rem;
+  //   }
+  // }
   &__checkbox {
-    &:not(:last-child) {
-      margin-right: 1.9rem;
-    }
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
   }
   &__disclaimer {
     font-weight: 500;
     font-size: 1.2rem;
     line-height: 2.1rem;
+    user-select: none;
     a {
       color: #F38120;
     }
+  }
+  &__disclaimer::before {
+    content: '';
+    position: absolute;
+    
+    // float: left;
+    margin-right: 1.9rem;
+    // display: inline-flex;
+    width: 1.8rem;
+    height: 1.8rem;
+    border: 0.2rem solid #F38120;
+    border-radius: 0.4rem;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+  }
+  &__checkbox:checked + label::before {
+    background-color: #F38120;
+    background-image: url('../images/check.svg');
+  }
+  &__checkbox:focus + label::before {
+    box-shadow: 0 0 0 0.2rem rgba(243, 131, 32, 0.25);
+  }
+  &__checkbox:focus:checked + label::before {
+    box-shadow: none;
+  }
+  &__checkbox + label:hover::before {
+    cursor: pointer;
   }
 }
 
