@@ -18,10 +18,13 @@ $( document ).ready(function () {
     $(this).setCursorPosition(4);
   }).mask("+7 ( 9 9 9 ) 9 9 9 - 9 9 - 9 9");
 
-  // form
+  // burger
 
-  // if ($('.c'))
-
+  $('.header__burger').click(function() {
+    $('.header__burger').toggleClass('active');
+    $('.header__menu').toggleClass('active');
+    $('body').toggleClass('lock');
+  })
 });
 
 window.addEventListener('DOMContentLoaded', () => {
