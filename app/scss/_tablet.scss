@@ -51,49 +51,6 @@ and (orientation: portrait) {
 
 }
 
-//burger
-
-
-
-@media only screen
-and (min-device-width: 320px)
-and (max-device-width: 768px) {
-
-  .bg{
-    position: relative;
-    overflow: hidden;
-  }
-  
-  .hero {
-    padding-top: 2rem;
-    &__benefits {
-      position: absolute;
-      width: 30%;
-      bottom: 0;
-      left: 50%;
-      transform: translate(-50%, 75%);
-    }
-    &__content {
-      flex: 0 1 100%;
-      text-align: center;
-      padding-top: 0;
-    }
-    &__title {
-      max-width: none;
-    }
-    &__buttons {
-      flex-direction: column;
-      order: 1;
-    }
-    &__btn {
-      width: 100%;
-      &:not(:last-child) {
-        margin-right: 0;
-        margin-bottom: 2.4rem;
-      }
-    }
-  }
-}
 
 // @media only screen
 // and (min-device-width: 320px)

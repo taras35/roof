@@ -1,14 +1,13 @@
 @media (max-width: 1023px) {
-  html {
-    font-size: 10px;
-  }
+  // html {
+  //   font-size: 10px;
+  // }
   .header {
     &__menu {
       .header__descr,
       .header__price,
       .header__social {
         display: block;
-        // display: flex;
       }
       position: fixed;
       top: 0;

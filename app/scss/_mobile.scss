@@ -1,0 +1,169 @@
+/* mobile (portrait) */
+@media only screen
+and (min-device-width: 320px)
+and (max-device-width: 768px)
+and (orientation: portrait) {
+
+  html {
+    font-size: 3.13vw;
+  }
+
+  .bg{
+    position: relative;
+    overflow: hidden;
+  }
+
+  .ic_hand {
+    font-size: 0.9rem;
+    margin-right: 0;
+  }
+  .ic_arrow:before {
+    font-size: 1.5rem; 
+  }
+
+  .header {
+    &__info {
+      min-height: 7.4rem;
+    }
+    &__logo {}
+    &__contact {
+      padding: 0;
+    }
+    &__schedule {
+      font-size: 0.7rem;
+      line-height: 0.9rem;
+    }
+    &__tel {
+      font-size: 1.4rem;
+      line-height: 1.7rem;
+    }
+    &__feedback {
+      font-size: 1rem;
+      line-height: 1.2rem;
+    }
+    &__burger {
+      width: 2rem;
+      height: 1.5rem;
+      span {
+        top: 0.65rem;
+      }
+    }
+    &__burger.active::before {
+      top: 0.65rem;
+    }
+    &__burger.active::after {
+      bottom: 0.65rem;
+    }
+  }
+  
+  .hero {
+    padding-top: 2.4rem;
+    &__benefits {
+      position: absolute;
+      z-index: 3;
+      margin-right: 0;
+      width: 62.5%;
+      bottom: 0;
+      left: 50%;
+      transform: translate(-50%, 75%);
+      padding: 0rem 0 2.6rem 2.3rem;
+      align-items: flex-start;
+    }
+    &__benefits::after {
+      top: -1.5rem;
+    }
+    &__content {
+      flex: 0 1 100%;
+      text-align: center;
+      padding-top: 0;
+    }
+    &__title {
+      max-width: none;
+      font-size: 1.8rem;
+      line-height: 3rem;
+      &:not(:last-child) {
+        margin-bottom: 0.5rem;
+      }
+    }
+    &__subtitle {
+      max-width: none;
+      font-size: 1.3rem;
+      line-height: 1.5rem;
+      &:not(:last-child) {
+        margin-bottom: 1.8rem;
+      }
+    }
+    &__buttons {
+      flex-direction: column;
+      order: 1;
+    }
+    &__btn {
+      width: 100%;
+      font-size: 1rem;
+      line-height: 1.6rem;
+      padding: 1.4rem 2.5rem 1.4rem 0;
+      justify-content: end;
+      &:not(:last-child) {
+        margin-right: 0;
+        margin-bottom: 1.2rem;
+      }
+    }
+    &__box-inner {
+      flex-direction: column;
+      align-items: center;
+      &:not(:first-child) {
+        margin-bottom: 1.2rem;
+      }
+    }
+    &__text {
+      font-size: 0.8rem;
+      line-height: 1.2rem;
+      max-width: 75%;
+    }
+  }
+
+  .benefits {
+    &__list {
+      font-size: 1rem;
+      line-height: 1.7rem;
+      position: relative;
+    }
+    &__item {
+      text-align: left;
+      width: 78.5%;
+      &:not(:last-child) {
+        margin-bottom: 2.8rem;
+      }
+    }
+    &__close {
+      position: absolute;
+      right: 1.4rem;
+      width: 3.3rem;
+      height: 3.3rem;
+      background: #F38120;
+      box-shadow: inset 0px 0px 22px rgba(255, 255, 255, 0.25);
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      span {
+        display: block;
+        background: #fff;
+        height: 0.2rem;
+        width: 0.9rem;
+      }
+      span:last-child {
+        position: absolute;
+        transform: rotate(90deg);
+      }
+    }
+    &__text {
+      display: block;
+      color: #B5B5B5;
+      font-size: 0.6rem;
+      line-height: 0.8rem;
+      margin-top: 0.7rem;
+      
+    }
+  }
+}
