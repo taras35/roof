@@ -24,6 +24,13 @@ $( document ).ready(function () {
     $('.header__burger').toggleClass('active');
     $('.header__menu').toggleClass('active');
     $('body').toggleClass('lock');
+  });
+
+  // benefits
+
+  $('.benefits__close').click(function() {
+    $('.hero__benefits').toggleClass('show');
+    $('.benefits__close-icon').toggleClass('show');
   })
 });
 
