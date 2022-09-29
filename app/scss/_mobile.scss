@@ -21,11 +21,15 @@ and (orientation: portrait) {
     font-size: 1.5rem; 
   }
 
+
+  
   .header {
     &__info {
       min-height: 7.4rem;
     }
-    &__logo {}
+    &__logo {
+
+    }
     &__contact {
       padding: 0;
     }
@@ -42,17 +46,17 @@ and (orientation: portrait) {
       line-height: 1.2rem;
     }
     &__burger {
-      width: 2rem;
-      height: 1.5rem;
+      width: 20px;
+      height: 15px;
       span {
-        top: 0.65rem;
+        top: 6.5px;
       }
     }
     &__burger.active::before {
-      top: 0.65rem;
+      top: 6.5px;
     }
     &__burger.active::after {
-      bottom: 0.65rem;
+      bottom: 6.5px;
     }
   }
   
@@ -206,6 +210,124 @@ and (orientation: portrait) {
       
     }
   }
+
+  .header {
+    &__menu {
+      .header__descr,
+      .header__price,
+      .header__social {
+        display: block;
+      }
+      position: fixed;
+      top: 0;
+      right: -100%;
+      z-index: 50;
+      width: 100%;
+      height: 100vh;
+      background-color: #EDF2F5;
+      padding: 8.8rem 2rem;
+      font-size: 1rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      transition: all .3s ease-out;
+      overflow: auto;
+      .header__descr {
+        &:not(:last-child) {
+          margin-bottom: 1.6rem;
+        }
+        flex: 0 1 auto;
+        width: 75%;
+        font-size: 0.8rem;
+        line-height: 1.4rem;
+        p {
+          display: inline;
+          &:not(:last-child) {
+            margin-bottom: 0;
+          }
+        }
+      }
+      .header__price {
+        display: flex;
+        &:not(:last-child) {
+          margin-bottom: 1.6rem;
+        }
+      }
+
+      .header__price-text {
+        line-height: 1.2rem;
+      }
+      .header__social-items {
+        justify-content: center;
+      }
+      .header__social-item {
+        &:not(:last-child) {
+          margin-right: 1.5rem;
+        }
+      }
+      .header__social {
+        display: flex;
+        // align-items: center;
+      }
+      .header__social-text {
+        // display: inline-block;
+        text-align: center;
+        &:not(:last-child) {
+          margin-bottom: 1rem;
+        }
+      }
+    }
+    &__menu.active {
+      right: 0;
+    }
+    &__home-ic {
+      &:not(:last-child) {
+        margin-bottom: 2rem;
+        margin-right: 0;
+      }
+    }
+    &__nav {
+      flex-grow: 0;
+      &:not(:last-child) {
+        margin-bottom: 3.2rem;
+      }
+    }
+    &__info {
+      position: relative;
+      z-index: 51;
+    }
+    &__logo {
+      order: -1;
+      padding: 1.55rem 1.25rem;
+      align-self: start;
+      position: relative;
+    }
+    &__descr {
+      display: none;
+    }
+    &__price {
+      display: none;
+    }
+    &__social {
+      display: none;
+    }
+    &__contact {
+      // padding: 2rem;
+    }
+  }
+
+  .menu {
+    &__list {
+      flex-direction: column;
+    }
+    &__item {
+      text-align: center;
+      &:not(:last-child) {
+        margin-bottom: 2rem;
+        margin-right: 0;
+      }
+    }
+  }
 }
 
 @keyframes pulse-1 {
@@ -242,7 +364,7 @@ and (orientation: portrait) {
 @media only screen
 and (min-device-width: 320px)
 and (max-device-width: 768px)
-and (orientation: landscape) {
+and (orientation: landscape  ) {
 
  
 }
