@@ -28,7 +28,7 @@ and (orientation: portrait) {
       min-height: 7.4rem;
     }
     &__logo {
-
+      flex: 0 1 27.2%;
     }
     &__contact {
       padding: 0;
@@ -366,5 +366,12 @@ and (min-device-width: 320px)
 and (max-device-width: 768px)
 and (orientation: landscape  ) {
 
- 
+ html {
+  font-size: .83vh;
+ }
+ .header {
+  &__logo {
+    flex: 0 1 auto;
+  }
+  }
 }
