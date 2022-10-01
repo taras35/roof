@@ -226,7 +226,7 @@ a.header__tel {
     }
   }
   &__burger{
-    @media (min-width: 1024px) {
+    @media (min-width: 1023px) {
       display: none;
     }
     display: block;
