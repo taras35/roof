@@ -26,6 +26,14 @@ body {
     "../images/bg-1x.jpg" 1x,
     "../images/bg-2x.jpg" 2x,
   );
+  @media (max-width: 425px) {
+    background-image: image-set(
+      "../images/bg-mob-1x.webp" 1x,
+      "../images/bg-mob-2x.webp" 2x,
+      "../images/bg-mob-1x.jpg" 1x,
+      "../images/bg-mob-2x.jpg" 2x,
+    );
+  }
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
